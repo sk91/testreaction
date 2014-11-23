@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test reaction</title>
+</head>
+<body>
+	
+
+	<div class="image_container">
+		
+	</div>
+
+	<div class="results_container"></div>
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src='testreaction.js'></script>
+
+
+	<script type="text/javascript">
+		$(function(){
+			reaction_test({
+				jump_on_press: true, //optional default false
+				image_container: '.image_container', //optional
+				results_container: '.results_container', //optional
+				keys: ["A","L"], //optional, default ["A", "L"]
+				switch_time: [3,5], //optional, default [3,5]
+
+				images: [
+					{
+						name: "Image 1",
+						src: '1.jpg'
+					},
+					{
+						name: "Image 2",
+						src: '2.png'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					},
+					{
+						name: "Image 3",
+						src: '3.jpg'
+					}
+				]
+			});
+		});
+	</script>
+
+
+	<style type="text/css">
+		.results_container{
+			float: right;
+			width:45%;
+			display: block;
+		}
+
+		.image_container{
+			float:left;
+			width:45%;
+			display: block;
+		}
+	
+	</style>
+
+</body>
+</html>
